@@ -1,38 +1,79 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>岐阜協立大学 経営情報学科</title>
     <style>
         body {
-            background-color: #e0f7fa;
-            color: #000;
-            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
         }
 
         header {
-            text-align: center;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
             padding: 20px;
+            text-align: center;
+            position: relative;
         }
 
         header img {
             width: 100%;
-            max-width: 600px;
+            max-width: 500px;
             height: auto;
-            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        .social-icons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .homepage-link {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .homepage-link a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-size: 1.2em;
+            border: 2px solid #6a11cb;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .homepage-link a:hover {
+            background-color: #6a11cb;
+            color: white;
         }
 
         nav {
-            background-color: #64b5f6;
+            background-color: #333;
             padding: 10px;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
@@ -43,6 +84,7 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
 
         main {
@@ -50,35 +92,73 @@
         }
 
         h2 {
-            border-bottom: 2px solid #64b5f6;
-            padding-bottom: 5px;
-        }
-
-        section {
+            border-bottom: 3px solid #6a11cb;
+            padding-bottom: 10px;
             margin-bottom: 20px;
         }
 
+        section {
+            margin-bottom: 40px;
+        }
+
         footer {
-            background-color: #64b5f6;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer .footer-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        footer .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                max-width: 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .homepage-link a {
+                display: block;
+                margin: 10px auto;
+            }
+
+            footer .footer-links {
+                position: static;
+                margin-top: 10px;
+            }
         }
     </style>
-    <script>
-        function redirectToHomePage() {
-            window.location.href = "https://www.gku.ac.jp/";
-        }
-    </script>
 </head>
-<body>
+<bodyを
     <header>
         <h1>岐阜協立大学 経営情報学科</h1>
-        <img src="ダウンロード.jpg" alt="経営情報学科" onclick="redirectToHomePage()">
+        <img src="ダウンロード.jpg" alt="経営情報学科">
         <div class="social-icons">
         
+            
         </div>
     </header>
+    <div class="homepage-link">
+        <a href="https://www.gku.ac.jp/">岐阜協立大学 ホームページへ</a>
+    </div>
     <nav>
         <ul>
             <li><a href="#introduction">学科の紹介</a></li>
@@ -89,21 +169,21 @@
     <main>
         <section id="introduction">
             <h2>学科の紹介</h2>
-            <p>岐阜協立大学の経営情報学科では、経営と情報技術を融合させた教育を提供しています。学生は、現代のビジネス環境で必要とされる知識とスキルを習得し、実践的な問題解決能力を身につけます。</p>
+            <p>岐阜協立大学の経営情報学科では、３つの分野を究めるカリキュラムで、それぞれの専門知識を融合し、最先端のテクノロジーを活用して、新しい価値を創造する力を身につけます。</p>
         </section>
         <section id="curriculum">
             <h2>カリキュラム</h2>
             <article>
-                <h3>マーケティング論</h3>
-                <p>消費者行動や市場調査、広告戦略について学び、実践的なマーケティングスキルを身につけます。</p>
+                <h3>経営・マーケティング分野</h3>
+                <p>経営学を体系的に学び、新しい製品・サービスの提案と効果的な売り出し方について考える力や、企業や様々な組織の運営力を身につける。</p>
             </article>
             <article>
-                <h3>会計ファイナンス分野</h3>
-                <p>財務諸表の作成や分析、資金管理について学び、企業の財務健全性を高めるスキルを養います。</p>
+                <h3>会計・ファイナンス分野</h3>
+                <p>会計情報の意味を適切に理解し、企業の財政状態や経営状況から将来性を推測する力を身につける。。</p>
             </article>
             <article>
                 <h3>情報分野</h3>
-                <p>情報システムの設計・開発、データベース管理などを学び、ビジネスにおける情報活用能力を強化します。</p>
+                <p>ビックデータを利活用する現代ビジネスで、必要不可欠なAI,IoT,ロボット、グラインド等のデジタルテクノロジーを活用する力を身につける。。</p>
             </article>
         </section>
         <section id="careers">
@@ -113,6 +193,10 @@
     </main>
     <footer>
         <p>© 2024 岐阜協立大学 経営情報学科</p>
+        <div class="footer-links">
+            <a href="https://www.gku.ac.jp/">ホームページ</a>
+            <a href="#">お問い合わせ</a>
+        </div>
     </footer>
 </body>
 </html>
