@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>岐阜協立大学 経営情報学科</title>
     <style>
@@ -22,6 +22,7 @@
             width: 100%;
             max-width: 600px;
             height: auto;
+            cursor: pointer;
         }
 
         nav {
@@ -64,11 +65,16 @@
             padding: 10px;
         }
     </style>
+    <script>
+        function redirectToHomePage() {
+            window.location.href = "https://www.gku.ac.jp/";
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>岐阜協立大学 経営情報学科</h1>
-        <img src="ダウンロード.jpg" alt="経営情報学科">
+        <img src="./岐阜協立大学 経営情報学科_files/ダウンロード.jpg" alt="経営情報学科" onclick="redirectToHomePage()">
         <div class="social-icons">
             <a href="https://www.gku.ac.jp/"><i class="fab fa-岐阜協立ホームページ"></i></a>
             <button class="button" onclick="followAlert()">Follow</button>  
@@ -89,16 +95,16 @@
         <section id="curriculum">
             <h2>カリキュラム</h2>
             <article>
-                <h3>基礎科目</h3>
-                <p>経営学の基礎や情報技術の基礎を学びます。</p>
+                <h3>マーケティング論</h3>
+                <p>消費者行動や市場調査、広告戦略について学び、実践的なマーケティングスキルを身につけます。</p>
             </article>
             <article>
-                <h3>専門科目</h3>
-                <p>経営戦略や情報システムの設計・開発を学びます。</p>
+                <h3>会計ファイナンス分野</h3>
+                <p>財務諸表の作成や分析、資金管理について学び、企業の財務健全性を高めるスキルを養います。</p>
             </article>
             <article>
-                <h3>実践科目</h3>
-                <p>インターンシップやプロジェクトベースの学習を通じて、実践的なスキルを磨きます。</p>
+                <h3>情報分野</h3>
+                <p>情報システムの設計・開発、データベース管理などを学び、ビジネスにおける情報活用能力を強化します。</p>
             </article>
         </section>
         <section id="careers">
@@ -107,7 +113,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 岐阜協立大学 経営情報学科</p>
+        <p>© 2024 岐阜協立大学 経営情報学科</p>
     </footer>
 </body>
 </html>
