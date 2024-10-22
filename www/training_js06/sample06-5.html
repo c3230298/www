@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>変数の演算</title>
+</head>
+<body>
+<h1>変数の演算</h1>
+<p>a = 10, b = 4 の場合</p>
+<p><button onclick="add();">足し算</button>
+    <button onclick="subtract();">引き算</button>
+    <button onclick="muktiply();">掛け算</button>
+    <button onclick="divide();">割り算</button></p>
+
+<script>
+let a = 10;
+let b = 4;
+let total = 0;
+
+function add() {
+    total = a + b;
+    alert(total);
+}
+function subtract() {
+    total = a - b;
+    alert(total);
+}
+function muktiply() {
+    total = a * b;
+    alert(total);
+}
+function divide() {
+    total = a / b;
+    alert(total);
+}
+</script>    
+</body>
+</html>
