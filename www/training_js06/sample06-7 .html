@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用料金の計算</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #605c5c;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2a15f;
+            color: black;
+        }
+        
+        button {
+            padding: 5px 10px;
+            background-color: #c1c5c1;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+    <script>
+        const a = [500, 980, 1200];
+        const b = [10, 16, 8];
+
+        function multiply(i) {
+            const anser = a[i] * b[i];
+            alert("料金は" + anser + "円です");
+            }
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">利用料の計算</h1>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>料金(a)</th>
+            <th>人数(b)</th>
+            <th>a×b</th>
+        </tr>
+        <tr>
+            <td style="background-color: #f2a15f;">0</td>
+            <td>500</td>
+            <td>10</td>
+            <td><button onclick="multiply(0);">利用料の合計</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f2a15f;">1</td>
+            <td>980</td>
+            <td>16</td>
+            <td><button onclick="multiply(1);">利用料の合計</button></td>
+        </tr>
+        <tr>
+            <td style="background-color: #f2a15f;">2</td>
+            <td>1200</td>
+            <td>8</td>
+            <td><button onclick="multiply(2);">利用料の合計</button></td>
+        </tr>
+    </table>
+</body>
+</html>
