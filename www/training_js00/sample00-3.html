@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>写真の一覧</title>
+</head>
+<body>
+    <h1>写真の一覧</h1>
+    <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
+    <div id="photo-container" class="gallery"></div>
+    <button id="show-photos-button"onclick="displayPhotos()">写真を表示</button>
+    <script>
+        function displayPhotos() {
+            const photoContainer = document.getElementById("photo-container");
+            const photos = [
+                "photo_1.jpg",
+                "photo_2.jpg",
+                "photo_3.jpg",
+                "photo_4.jpg",
+                "photo_5.jpg",
+                "photo_6.jpg",
+                "photo_7.jpg",
+                "photo_8.jpg"
+                ];
+                photos.forEach(photoUrl => {
+                const img = document.createElement("img");
+                img.src = photoUrl;
+                photoContainer.appendChild(img);
+            });
+
+            const button = document.getElementById("show-photos-button");
+            button.remove();
+        }
+    </script>
+                
+            
+    
+</body>
+</html>
