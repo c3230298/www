@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>写真一覧表示</title>
+  <style>
+    .photo {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button id="showPhotosBtn">写真を表示</button>
+  <div id="photoContainer"></div>
+
+  <script>
+    document.getElementById('showPhotosBtn').addEventListener('click', function() {
+      let photosHTML = '';
+      for (let i = 1; i <= 8; i++) {
+        photosHTML += `<img src="photo${i}.jpg" class="photo" alt="写真${i}">`;
+      }
+      document.getElementById('photoContainer').insertAdjacentHTML('beforeend', photosHTML);
+      this.remove();
+    });
+  </script>
+</body>
+</html>
