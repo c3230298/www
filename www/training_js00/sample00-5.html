@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>入場料の一覧</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: solid 1px #000;
+      padding: 5px;
+      text-align: center;
+    }
+    th {
+      background-color: #99CCCC;
+    }
+  </style>
+</head>
+<body onload="createTable()">
+  <h1>入場料の一覧</h1>
+  <table>
+    <thead id="t_head"></thead>
+    <tbody id="t_body"></tbody>
+  </table>
+
+  <script>
+    function createTable() {
+      const headers = ["大人", "高校生", "中学生", "小学生"];
+      const prices = [
+        [800, 680, 450, 380],
+        [1600, 1360, 900, 760],
+        [2400, 2040, 1350, 1140],
+        [3200, 2720, 1800, 1520],
+        [4000, 3400, 2250, 1900]
+      ];
+      let headerHTML = "<tr><th></th>";
+      headers.forEach(header => {
+        headerHTML += `<th>${header}</th>`;a
+      });
+      headerHTML += "</tr>";
+      document.getElementById("t_head").insertAdjacentHTML("beforeend", headerHTML);
+
+      let bodyHTML = "";
+      prices.forEach((row, index) => {
+        bodyHTML += `<tr><th>${index + 1}人</th>`;
+        row.forEach(price => {
+          bodyHTML += `<td>${price}円</td>`;
+        });
+        bodyHTML += "</tr>";
+      });
+      document.getElementById("t_body").insertAdjacentHTML("beforeend", bodyHTML);
+    }
+  </script>
+</body>
+</html>
